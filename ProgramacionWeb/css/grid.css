@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#layaut{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    /* para el espacio entre bloques de grid utilizamos 
+    grid-gap: 10px;
+     */
+    grid-gap: 10px;
+    border: 2px solid saddlebrown;
+    padding: 10px;
+    /* definir el tamano de las columnas como en bostrap */
+    grid-template-columns: calc(50% - 10px)  calc(50% - 10px);
+    /* de esta manera podras darle el epacio para poder asigrarle el tamano
+    y la posicion con cualquiera de las siguientes dos */
+    grid-template-columns: calc(25% - 10px) calc(25% - 10px) calc(25% - 10px) calc(25% - 10px);
+    grid-template-columns: repeat(2,25%);
+    /* parapoder ldarle una tamano tambien podemos
+    utilizar las fr fraciones para poder darle un buen tamano */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+    /* tambien podemos utilizarlo con base a los renglones  */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+
+}
+#layaut .caja{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border: 4px solid black;
+    background: gray;
+}
+#layaut .red{
+    background-color: red;
+}
+#layaut .green{
+    background-color: green;
+    grid-column-start: 3;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-row: 1/3;
+}
+#layaut .pink{
+    background-color: pink;
+}
+#layaut .orangered{
+    background-color: orange;
+}
+#layaut .blue{
+    background-color: blue;
+}

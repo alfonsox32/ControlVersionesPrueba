@@ -1,0 +1,164 @@
+#boton{
+    display: block;
+    width: 200px;
+    padding: 15px;
+    border: 2px inset gray;
+    background: rgb(122, 122, 124);
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(50, 10, 150);
+    transition: bacground-color, width,color, 0.9s; 
+}
+#boton:hover{
+    background: steelblue;
+    width: 300px;
+    color: azure;
+}
+#caja{
+    background: tomato;
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at top left);
+    margin: 20px;
+    transition-property: clip-path;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.conteiner:hover #caja{
+    clip-path: circle(150% at top left);
+}
+#caja2{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background: burlywood;
+    color: black;
+    border: 5px inset black ;
+    font-size: 30px;
+    text-align: center;
+    line-height: 200px;
+    /*para iniciar una aminmacion*/
+    animation-name: desplazamiento;
+    animation-duration: 4s;
+    /*si quiero hacer infinita la animacion*/
+    animation-iteration-count: infinite; 
+    /*esto es la velocidad de la animacion*/
+    animation-timing-function: linear;
+}
+
+/*aimportante es hacer el @keyframe*/
+@keyframes desplazamiento{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+}
+ 
+.caja3{
+    margin-top: 40px;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    background:yellow;
+    text-align: center;
+    line-height: 230px;
+    animation-name: masrapido;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    border: 2px inset gray;
+}
+
+@keyframes masrapido {
+    0%{
+        margin-left: 0px;
+        transform: translateY(50px);
+    }
+    50%{
+        margin-left: 2900px;
+        transform: translateY(var(--randomY));
+    }
+    100%{
+        margin-left: 0px;
+        transform: translateY(var(--random));
+    }
+}
+.ab{
+    background: red;
+}
+.ca{
+    background: green;
+}
+.va{
+    background: gray;
+}
+
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left:1200px ;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);/*deg son los grados a desplazar*/
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(370deg);
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    
+}
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);/*deg son los grados a desplazar*/
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(370deg);
+        border-radius: 999px;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    
+}
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);/*deg son los grados a desplazar*/
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(370deg);
+        border-radius: 999px;
+    }
+    75%{
+        background-color: red;
+    }
+    80%{
+        border: 10px inset black;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    
+}

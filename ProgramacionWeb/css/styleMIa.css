@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: linear-gradient(to left, rgb(126, 119, 29),rgb(156, 55, 139));
+    
+}
+.contenedorGeneral{
+   width: 70%;
+   height: 750px;
+   border-radius: 9%;
+   border: 5px inset linen;
+   text-align: center;
+   margin-top: 50px;
+   background-image: linear-gradient(rgba(187, 108, 108, 0.932),rgba(111, 182, 194, 0.87)), url(/tecnologia-og.webp);
+}
+.mover{
+    display: flex;
+    justify-content: center;
+}
+.foto{
+    margin-top: 20px;
+    width: 170px ;
+    height:170px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: width,height,border-radius, 1s ;
+}
+.foto:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}
+.acomodarDescripcion{
+    width: 80%;
+    margin-left: 10%;
+}
+.descripcion{
+    font-size: 20px;
+}
+.estudio{
+    margin-top: 15px;
+}
+.red>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: width,height,border-radius, 1s;
+}
+.red>img:hover{
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+}
+.redes{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px; /* espacio entre cada grupo */
+    justify-content: center;
+}
+.red a{
+    margin-right: 40px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.red {
+    display: flex;
+    align-items: center; /* centra verticalmente imagen y texto */
+    text-decoration: none; /* quita subrayado si se aplica al a */
+}
+.caja>img{
+    height: 160px;    
+    width: 160px;
+    border-radius: 100%;
+    animation-name: desplazar;
+}
+.caja{
+    height: 160px;
+    border-radius: 100%;
+    width: 160px;
+    border-radius: 100%;
+    margin-top: 30px;
+    animation-name: desplazar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes desplazar{
+    0%{
+        margin-left: 0px;
+    }
+    25%{
+        margin-left: 25%;
+        width: 180px;
+        height: 180px;
+    }
+    50%{  
+        margin-left: 40%;
+        width: 190px;
+        height: 190px;
+    } 
+    75%{
+        margin-left: 50%;
+        width: 190px;
+        height: 190px;
+    }
+    100%{
+        margin-left: 82%;
+        width: 160px;
+        height: 160px;
+    }
+}
