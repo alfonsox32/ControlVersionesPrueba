@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logos/dinero.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilosCSS/vinvular.css">
+    <title>Vale Facil</title>
+</head>
+<body>
+    <form action="" method="GET" >
+        <!--En los input el name debe ir afuerzas ya que
+        es como la variable que va a almacenar la informacion-->
+        <label for="nom">Ingresar el Nombre</label>
+        <br>
+        <input name="Nombre" maxlength="8" minlength="1" placeholder="Escribe tu Nombre" type="text" id="nom">
+        <br>
+        <br>
+        <label for="Psd">Ingresar Constrasena</label>
+        <br>
+        <input name="Constrasena" type="password" id="Psd">
+        <br>
+        <br>
+        <label for="em">Ingresar Email</label>
+        <br>
+        <input name="email" id="em" placeholder="Ingresa Email" type="email">
+        <br>
+        <br>
+        <label for="edad">Ingresa Tu edad</label>
+        <br>
+        <input name="edad" id="edad" type="number">
+        <br><br>
+        <input name="sexx" type="checkbox" value="masculino" id="">masculino
+        <input name="sexx" type="checkbox" value="femenino" id="">Femeninino
+        <br><br>
+        <input type="radio" name="sexo">Hombre
+        <input type="radio" name="sexo">Mujer
+        <br><br>
+        <select name="pais" id="pai">
+            <option value="Mexico">Mexico</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Boton-submit">
+
+    </form>
+</body>
+</html>

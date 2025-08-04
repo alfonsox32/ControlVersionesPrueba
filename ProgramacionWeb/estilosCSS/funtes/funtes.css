@@ -1,0 +1,74 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.todo{
+    padding-left: 50px;
+    background-color: aquamarine;
+}
+.navegador{
+    font-family: "Manufacturing Consent", system-ui;
+    font-style: normal;
+    font-size: 30px;
+    /*
+    border: 5px dashed brown;
+    border-width: 30px 10px 30px 10px;
+    border-color: aqua red blue gray;
+    border-style: inset;*/
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+    gap: 400px;
+    background-color: aqua;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+}
+
+.sombra {
+  box-shadow: 0 0 50px gray;
+}
+
+.borde {
+  border: 1px solid black;
+}
+.seccion{
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background-attachment: fixed;
+  background-image: linear-gradient(to left,rgba(48, 177, 209, 0.808),rgba(245, 33, 199, 0.849)), url(/tecn.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.degradado{
+  width: 80%;
+  height: 400px;
+  margin: 30px auto;
+  background-size: cover;
+  background-position: center;
+  background-color: aquamarine;
+  background-attachment: fixed;
+ background-image: linear-gradient(to top, rgba(48, 208, 48, 0.5) 0%, rgba(51, 8, 103, 0.5) 100%), url(/tecn.webp);
+}
+.casi{
+  font-size: 50px;
+  margin: 0%;
+  padding: 0%;
+}
+.seccion{
+  font-size: 45px;
+  margin: 0%;
+  padding: 0%;
+}
+.imagenr{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  border-top-left-radius: 50px;
+}

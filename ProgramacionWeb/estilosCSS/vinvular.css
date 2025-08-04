@@ -1,0 +1,72 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    background-color: wheat;
+    padding: 20px;
+}
+
+a{
+    font-size: 20px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a{
+    color: aqua;
+}
+
+#descripcion, #titulo{
+    border: 5px solid black;
+    padding: 15px;
+}
+
+#titulo{
+    background: blue;
+    border: 2px dashed wheat;
+}
+
+.parrafo2{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.parrafo1, .parrafo3{
+    background-color: green;
+    color: wheat;
+    padding: 10px;
+}
+.parrafo3{
+    background: orange;
+    color: black;
+}
+
+#usuario form {
+    border: 5px solid blue;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+#usuario form *{
+display: block;
+}
+
+a[href^="www"]{
+    color: brown;
+}
+
+a[href$=".com"]{
+
+}
+input[type="text"]{
+
+}
+input[type="submit"]{
+    color: black;
+    background-color: aquamarine;
+    padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+     background:rgb(119, 2, 2);
+}
+.cabezera{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    background-color: rgb(48, 33, 13);
+}
+.imagen img{
+    width: 300px;
+    height: 100px;
+    margin-right: 50px;
+    border-radius: 10%;
+    border: 5px inset rgb(255, 255, 255);
+    filter:brightness(200%);
+}
+.titulo{
+    margin: 10px 10px;
+    padding: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    transition: width,height,border-radius, 1s ;
+    box-shadow: 20px 5px 20px rgb(255, 255, 255);
+}
+.titulo:hover{
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.contenidoTotal{
+    display: flex;
+    justify-content: space-between;
+}
+.izquierda{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 30%;
+    background-color: rgba(229, 192, 192, 0.856);
+    border-radius: 10%;
+    border: 5px inset black;
+    transition: width,height,border-radius, 1s ;
+}
+.izquierda:hover{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 33%;
+    background-color: rgba(229, 192, 192, 0.856);
+    border-radius: 5%;
+    border: 3px inset black;
+    transition: width,height,border-radius, 1s ;
+}
+.derecha{
+    width: 55%;
+}
+.menu2 ul li{
+    background-color: rgb(235, 216, 216);
+    list-style: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-left: 60px;
+    transition: width,height,border-radius, 1s ;
+}
+.menu2 ul li:hover{
+    background-color: rgb(235, 216, 216);
+    list-style: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 30px;
+    margin-left: 60px;
+}
+.menu h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.menu{
+    padding: 15px;
+    border-radius: 10%;
+    box-shadow: 5px 14px 15px rgb(0, 0, 0);
+}
+.derecha{
+    margin-top: 30px;
+    margin-right: 40px;
+    background-color: rgba(229, 192, 192, 0.856);
+    border: 5px inset black;
+}
+.variedad{
+    padding: 20px;
+    /* flex-wrap:wrap;
+    es para evitar que mas contenedores se unan a una sola fila 
+    y que se genere la barra de scroleo con esta opcione evitas eso
+    y se si pasan de tamano se pasa a lasiguiente fila */
+
+    /* flex-grow:2; 
+    es como el tamano en boostrap si tienes 4 elementos
+    y a dos de ellos ejemplo de las 2 los dos van a tomar un 
+    espacio mas grande iguales... y los otros dos restantes 
+    conservaran su tamano*/
+}

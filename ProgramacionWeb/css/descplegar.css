@@ -1,0 +1,36 @@
+.contenedor{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    list-style: none;
+    z-index: 1000;
+    display: grid;
+    justify-content: center;
+    gap: 2em;
+    transition: transform .3s;
+    transform: translateX(-150%);
+}
+.contenedor:target{
+    transform: translateX(0);
+}
+.boton{
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 30%;
+    background-color: antiquewhite;
+    padding: 20px;
+    transition: width,heigth,color, .5s;
+    box-shadow: 5px 5px 5px black;
+}
+.boton a{
+    text-decoration: none;
+    color: black;
+}
+.boton:hover{
+    font-size: 20px;
+    box-shadow: 3px 3px 3px black;
+}
